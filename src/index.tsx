@@ -1,15 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Register from './pages/Register';
+import {Home} from './pages/Home';
+import { GlobalFont } from './assets/global/globalStyle';
+import Register2 from './pages/Register2';
+import Congratulations from './pages/Congratulations';
+import Pesquisa from './pages/Pesquisa';
+import ProductFound from './pages/ProductFound';
+import MenuHamburguer from './components/MenuHamburguer';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <GlobalFont/>
+    <Home/>
   </React.StrictMode>
 );
 
