@@ -10,4 +10,5 @@ export const ProductsDiv = styled.div`
 
     padding: 6%;
     gap: 5%;
+    margin-bottom: 40%;
 `
