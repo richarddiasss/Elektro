@@ -1,10 +1,12 @@
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 export const PesquisaDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 ` 
 
 export const ProdutoPesquisado = styled.div`
@@ -52,3 +54,9 @@ export const DivisionLine = styled.hr`
     border-radius: 16px;
 
  `
+
+export const StyledLink = styled(Link)`
+    color: black;
+    text-decoration: none;
+
+`

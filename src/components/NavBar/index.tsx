@@ -1,11 +1,12 @@
-import { IconDiv, ImgIcon, NavBarDiv, TextIcon } from "./style";
+import { IconDiv, ImgIcon, NavBarDiv, StyledLink, TextIcon } from "./style";
+import { Link } from 'react-router-dom';
 
 export default function NavBar(){
     return(
         <NavBarDiv>
             <IconDiv>
                 <ImgIcon src={require("../../assets/image/Ícones_casinha.png")}/>
-                <TextIcon>Home</TextIcon>
+                <StyledLink to={'/Home'}> <TextIcon>Home</TextIcon> </StyledLink>
             </IconDiv>
 
             <IconDiv>

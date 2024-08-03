@@ -4,7 +4,9 @@ import BarraPesquisa_E_Filtro from "../../components/BarraPesquisa_E_Filtro";
 import HeaderPesquisa from "../../components/HeaderPesquisa";
 import NavBar from "../../components/NavBar";
 import ProductsSugestion from "../../components/ProductsSugestion";
-import { DivisionLine, IconCancel, PesquisaDiv, ProdutoPesquisado, TextDeleteSearch, TextoProduto, TextSugestion } from "./style";
+import { DivisionLine, IconCancel, PesquisaDiv, ProdutoPesquisado, StyledLink, TextDeleteSearch, TextoProduto, TextSugestion } from "./style";
+import { Link } from 'react-router-dom';
+
 
 const sugestions = [
 
@@ -26,7 +28,7 @@ export default function Pesquisa(){
             </ProdutoPesquisado>
 
             <ProdutoPesquisado>
-                <TextoProduto>Smart TV</TextoProduto>
+                <StyledLink to={'/ProductFound'}>  <TextoProduto>Smart TV</TextoProduto> </StyledLink>
                 <IconCancel src={require("../../assets/image/IconCancel.png")}/>
             </ProdutoPesquisado>
 

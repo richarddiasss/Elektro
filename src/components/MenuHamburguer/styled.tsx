@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const MenuHamburguerDiv = styled.div`
 .bm-burger-button {
@@ -67,6 +68,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     left: 0;
     top: 0;
 }
+
 `
 
 export const IconMenuHamburguer = styled.img`
@@ -114,4 +116,13 @@ export const DivisonLine = styled.hr`
     width: 90%;
   
 `
+
+export const StyledLink = styled(Link)`
+    color: black;
+    text-decoration: none;
+
+`
+
+
+
 

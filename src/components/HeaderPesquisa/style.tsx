@@ -9,6 +9,7 @@ export const HeaderDiv = styled.header`
     border-bottom: 1.5px solid #d1cfcf;
 
     margin-bottom: 5%;
+    padding: 2.5%;
 `
 
 export const IconsHeader = styled.img`
@@ -19,5 +20,6 @@ export const TextHeader = styled.h1`
     font-size: 1.5rem;
     font-weight: 500;
     color: black;
+    margin: 0;
 
 `

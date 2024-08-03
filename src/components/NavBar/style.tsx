@@ -1,10 +1,12 @@
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 export const NavBarDiv = styled.div`
     background-color:#2B2B2B;
     width: 100%;
     position: fixed;
     bottom: 0;
+    overflow-x: hidden;
 
     display: flex;
     flex-direction: row;
@@ -32,4 +34,9 @@ export const IconDiv = styled.div`
     align-items: center;
     justify-content: center;
     gap: 6px;
+`
+
+export const StyledLink = styled(Link)`
+    color: white;
+    text-decoration: none;
 `

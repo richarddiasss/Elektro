@@ -1,12 +1,15 @@
+import { Link } from 'react-router-dom';
 
 import styled from "styled-components";
 import { photoTipo } from ".";
+
 export const HomeDiv = styled.div`
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 `
 
 export const Header = styled.header`
@@ -16,7 +19,6 @@ export const Header = styled.header`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
     background-color: #2B2B2B;
     padding: 3.5%;
     gap: 20px;
@@ -29,7 +31,7 @@ export const IconHearder = styled.img`
 `
 
 export const InputSearch = styled.input`
-    width: 70%;
+    width: 100%;
     height: 2.5rem;
     background-size: 20px;
     background-color: #F5F5F5;
@@ -39,11 +41,26 @@ export const InputSearch = styled.input`
     border: 0;
     outline: none;
 
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
     
     
 
+`
+
+export const DivInput = styled.div`
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 16px;
+    padding: 0% 3% 0% 3%;
+`
+
+export const ImgLupa = styled.img`
+    
 `
 
 export const Logo = styled.img`
@@ -143,4 +160,9 @@ export const FooterDiv = styled.footer`
 
 export const IconesRedesSocias = styled.img`
     
+`
+export const StyledLink = styled(Link)`
+    color: black;
+    text-decoration: none;
+
 `

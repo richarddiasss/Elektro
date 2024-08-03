@@ -3,7 +3,8 @@ import Category from "../../components/Category";
 import MenuHamburguer from "../../components/MenuHamburguer";
 import NavBar from "../../components/NavBar";
 import { Produto } from "../../components/Produto";
-import { CaroselDiv, CategoryDiv, CategoryTypes, SectionDiv, DivisionLine, Header, HomeDiv, IconHearder, InfoText, InputSearch, Logo, ProductsDiv, WelcomeDiv, WelcomeText, FooterDiv, IconesRedesSocias, DivisionLineCarosel} from "./style";
+import { Link } from 'react-router-dom';
+import { CategoryDiv, DivInput, CategoryTypes, SectionDiv, DivisionLine, Header, HomeDiv, IconHearder, InfoText, InputSearch, Logo, ProductsDiv, WelcomeDiv, WelcomeText, FooterDiv, IconesRedesSocias, DivisionLineCarosel, StyledLink, ImgLupa} from "./style";
 
 export interface photoTipo{
     active: boolean
@@ -14,8 +15,12 @@ export function Home(){
     return(
         <HomeDiv>
             <Header>
-                <MenuHamburguer/>
-                <InputSearch placeholder="Encontrar na Elektro"/>
+                <MenuHamburguer color={require('../../assets/image/3BarrasB.png')}/>
+                <DivInput>
+                    <ImgLupa src={require("../../assets/image/LupaPP.png")}/>
+                    <StyledLink to={'/Pesquisa'}><InputSearch placeholder="Encontrar na Elektro"/> </StyledLink>
+
+                </DivInput>
                 <IconHearder src={require("../../assets/image/carrinho.png")} alt="3Barras"/>
             </Header>
 

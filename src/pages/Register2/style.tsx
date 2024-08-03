@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const RegisterDiv = styled.div`
     flex: 1;
+    height: 100vh;
     align-items: center;
    justify-content: center;
 
@@ -16,7 +17,7 @@ export const HeaderDiv = styled.header`
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 11%;
+    padding: 4% 0% 4% 11%;
     gap: 16%;
 
     margin-bottom: 6%;
@@ -26,6 +27,7 @@ export const TitlePag = styled.h1`
     color: black;
     font-size: 1.5rem;
     font-weight: 600;
+    margin: 0;
 
 `
 
@@ -39,6 +41,8 @@ export const LogoSocialMedia = styled.img`
 
 export const DivisionLine = styled.hr`
   position: relative;
+  left: 13%;
+
   outline: 0;
   color: black;
   border: 0;
@@ -46,7 +50,7 @@ export const DivisionLine = styled.hr`
   height: 1.5em;
   width: 75%;
   margin-top: 5%;
-  margin-bottom: 13%;
+  margin-bottom: 10%;
 
 
     &:before {
@@ -69,7 +73,7 @@ export const DivisionLine = styled.hr`
     padding: 0% 5% 0% 5%;
     line-height: 1.5em;
     // this is really the only tricky part, you need to specify the background color of the container element...
-    color: #818078;
+    color: black;
     background-color: #fcfcfa;
   }
     
