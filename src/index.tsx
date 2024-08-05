@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Router from './routes/Routes'
-import InitialPage from './pages/InitialPage';
 import { GlobalFont } from './assets/global/globalStyle';
 
 
